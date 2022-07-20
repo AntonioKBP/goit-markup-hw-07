@@ -23,31 +23,37 @@
   <body>
     <!--Header-->
     <header class="header">
-      <div class="container main-nav">
-        <a href="./" class="header-logo"><span class="logo-accent">Web</span>Studio</a>
-        <nav>
-          <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="./index.html">Студия</a></li>
-            <li class="nav-item"><a class="nav-link current" href="#">Портфолио</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+      <div class="container">
+        <div class="header--div-for-flex">
+          <a href="./" class="header__logo"><span class="header__logo--accent">Web</span>Studio</a>
+          <nav>
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="./index.html">Студия</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link header__nav-link--current" href="#">Портфолио</a>
+              </li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="header__address-list">
+            <li class="header__address-item">
+              <a class="header__address-link" href="mailto:info@devstudio.com"
+                ><svg class="header__icon-envelope" width="16" height="12" aria-hidden="true">
+                  <use href="./images/main/icons.svg#envelope"></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="header__address-item">
+              <a class="header__address-link" href="tel:+380961111111">
+                <svg class="header__icon-phone" width="10" height="16" aria-hidden="true">
+                  <use href="./images/main/icons.svg#phone"></use></svg
+                >+38 096 111 11 11</a
+              >
+            </li>
           </ul>
-        </nav>
-        <ul class="header-list">
-          <li class="header-item">
-            <a class="header-address" href="mailto:info@devstudio.com"
-              ><svg class="icon-envelope" width="16" height="12" aria-hidden="true">
-                <use href="./images/main/icons.svg#envelope"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="header-item">
-            <a class="header-address" href="tel:+380961111111"
-              ><svg class="icon-phone" width="10" height="16" aria-hidden="true">
-                <use href="./images/main/icons.svg#phone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <main class="portfolio-main">
@@ -277,64 +283,93 @@
     </main>
     <!--footer-->
     <footer class="footer">
-      <div class="container footer-flex">
+      <div class="container footer--flex">
         <div>
-          <a href="/" class="footer-logo"><span class="logo-accent">Web</span>Studio</a>
+          <a href="/" class="footer__logo"><span class="footer__logo--accent">Web</span>Studio</a>
           <address class="footer-address">
-            <ul class="address-list">
-              <li class="address-item">г. Киев, пр-т Леси Украинки, 26</li>
-              <li class="address-item">
-                <a class="address-link" href="mailto:info@example.com">info@example.com</a>
+            <ul class="footer-address__list">
+              <li class="footer-address__item">
+                <a class="footer-address__link address__link--change-color-to-white" href="#"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
               </li>
-              <li class="address-item">
-                <a class="address-link" href="tel:+380991111111">+38 099 111 11 11</a>
+              <li class="footer-address__item">
+                <a class="footer-address__link" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="footer-address__item">
+                <a class="footer-address__link" href="tel:+380991111111">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-socials">
-          <p class="join-us">ПРИСОЕДИНЯЙТЕСЬ</p>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="footer-social-link" href=""
-                ><svg class="icon" width="20" height="20" aria-label="ссылка на инстаграм">
+        <div class="footer-social">
+          <p class="footer-social__text">ПРИСОЕДИНЯЙТЕСЬ</p>
+          <ul class="footer-social__list">
+            <li class="footer-social__item">
+              <a class="footer-social__link" href=""
+                ><svg
+                  class="footer-social__icon"
+                  width="20"
+                  height="20"
+                  aria-label="ссылка на инстаграм"
+                >
                   <use href="./images/main/icons.svg#instagram"></use></svg
               ></a>
             </li>
-            <li class="footer-social-item">
-              <a class="footer-social-link" href=""
-                ><svg class="icon" width="20" height="20" aria-label="ссылка на твиттер">
+            <li class="footer-social__item">
+              <a class="footer-social__link" href=""
+                ><svg
+                  class="footer-social__icon"
+                  width="20"
+                  height="20"
+                  aria-label="ссылка на твиттер"
+                >
                   <use href="./images/main/icons.svg#twitter"></use></svg
               ></a>
             </li>
-            <li class="footer-social-item">
-              <a class="footer-social-link" href=""
-                ><svg class="icon" width="20" height="20" aria-label="ссылка на фэйсбук">
+            <li class="footer-social__item">
+              <a class="footer-social__link" href=""
+                ><svg
+                  class="footer-social__icon"
+                  width="20"
+                  height="20"
+                  aria-label="ссылка на фйсбук"
+                >
                   <use href="./images/main/icons.svg#facebook"></use></svg
               ></a>
             </li>
-            <li class="footer-social-item">
-              <a class="footer-social-link" href=""
-                ><svg class="icon" width="20" height="20" aria-label="ссылка на линкедин">
+            <li class="footer-social__item">
+              <a class="footer-social__link" href=""
+                ><svg
+                  class="footer-social__icon"
+                  width="20"
+                  height="20"
+                  aria-label="ссылка на линкедин"
+                >
                   <use href="./images/main/icons.svg#linkedin"></use></svg
               ></a>
             </li>
           </ul>
         </div>
         <div class="footer-subscribe">
-          <p class="subscribe-text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+          <p class="footer-subscribe__text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
 
-          <form class="subsribe-form" name="subscribtion" autocomplete="on">
-            <label class="visually-hidden" for="subscribtion-email">E-mail</label>
+          <form class="footer-subscribe__form" name="subscribtion" autocomplete="on">
+            <label class="visually-hidden" for="footer-email">E-mail</label>
             <input
-              class="footer-input"
-              id="footer-email"
+              class="footer-subscribe__input"
+              id="footer-subscribe__email"
               type="email"
               name="email"
               placeholder="E-mail"
             />
-            <button class="button footer-btn">
-              Подписаться<svg class="subscribe-icon" width="24" height="24" aria-hidden="true">
+            <button class="button footer-subscribe__btn" type="button">
+              Подписаться<svg
+                class="footer-subscribe__icon"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
                 <use href="./images/main/icons.svg#telegram-icon"></use>
               </svg>
             </button>
