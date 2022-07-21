@@ -1,0 +1,14 @@
+.footer__logo {
+  display: inline-block;
+  font-family: Raleway, serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+.footer__logo--accent {
+  color: var(--accent-color);
+}

@@ -1,0 +1,32 @@
+.header__address-list {
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+  .header__address-item {
+    margin-right: 50px;
+  }
+  
+  .header__address-item:last-child {
+    margin-right: 0;
+  }
+  
+  .header__address-link {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--text-color-gray);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: color 250ms var(--cubik-timings);
+  }
+  
+  .header__address-link:hover,
+  .header__address-link:focus {
+    color: var(--accent-color);
+  }
