@@ -1,4 +1,12 @@
-.header__logo {
+.header {
+  background-color: var(--white-color);
+  border-bottom: 1px solid #ececec;
+  &-flex {
+  display: flex;
+  align-items: center;
+}
+
+&__logo {
   margin-right: 93px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -12,6 +20,8 @@
   color: var(--absolute-black);
 }
 
-.header__logo--accent {
+&__logo--accent {
   color: var(--accent-color);
+}
+ 
 }
